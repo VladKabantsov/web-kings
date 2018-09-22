@@ -1,0 +1,168 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+.container-fluid {
+    padding-left: 0!important;
+    padding-right: 0!important;;
+}
+
+.bg {
+    background-size: cover;
+    height: 100vh;
+}
+
+.img-1 {
+    background-image: url('../img/bg1.svg');
+}
+
+.gradient {
+    background: -webkit-linear-gradient(right, #FF7F7F, #DDCD13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grey {
+    color: #7A7A7A;
+}
+
+.base-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    color: #7A7A7A;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-space-bw {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+/*section 1*/
+
+.logo-img {
+
+    padding-left: 35px;
+}
+
+.web-kings {
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.make-better {
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.21em;
+    color: #FFFFFF;
+}
+
+.slogan {
+    margin-left: 45px;
+}
+
+.nav a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.nav a:hover {
+    background: -webkit-linear-gradient(right, #FF7F7F, #DDCD13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.main-text:before {
+    content:url('../img/line.svg');
+    left: -40px;
+    position: absolute;
+}
+
+.main-text:after {
+    content:url('../img/line.svg');
+    right: -40px;
+    position: absolute;
+    bottom: 0
+}
+
+
+/*section 2*/
+
+.bg-2 {
+    background-color: #E0E5E9;
+}
+
+.lion-1-img {
+    position: absolute;
+    left: 20%;
+    height: 106vh;
+    top: -3vh;
+}
+
+.about-us {
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+}
+
+.numbers {
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.about-categories {
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
