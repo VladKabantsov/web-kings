@@ -25,10 +25,12 @@
 }
 
 .black-square {
-    background-size: contain;
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../img/black-square.svg');
-    background-position: bottom;
 }
 
 .gradient {
@@ -70,6 +72,15 @@
 
 .justify-center {
     justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-end {
+    align-items: flex-end;
 }
 
 /*section 1*/
@@ -312,5 +323,111 @@
 }
 
 .with-love-slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+
+.container-contacts {
+    position: relative;
+}
+
+.social-icons img {
+    padding: 25px;
+}
+
+.copyrights {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 25px 0;
+}
+
+.submit-container {
+    text-align: right;
+    margin: 15px;
+}
+
+.text-area {
+    margin: 15px;
+}
+
+.text-area textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+}
+
+.input-container input {
+    width: 100%;
+    margin: 15px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: 1; /* Firefox */
+}
+
+.send-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    width: 30%;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    padding: 10px;
+}
+
+.form-contacts {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.subtitle-for-contacts {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.value-contacts {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
 
 }
