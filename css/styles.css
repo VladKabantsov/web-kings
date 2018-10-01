@@ -24,6 +24,12 @@
     background-image: url('../img/bg2.svg');
 }
 
+.black-square {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/black-square.svg');
+    background-position: bottom;
+}
 
 .gradient {
     background: -webkit-linear-gradient(right, #FF7F7F, #DDCD13);
@@ -62,6 +68,9 @@
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
 
 /*section 1*/
 
@@ -284,4 +293,24 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    background: #333;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.line {
+    background: #FFF;
+    height: 1px;
+    width: 300px;
+    margin: 0 25px;
+}
+
+.with-love-slogan {
+
 }
