@@ -17,9 +17,30 @@ $(window).on('load', function () {
 
     setTimeout(function () {
 
-        $("#Layer_1").fadeOut(200);
+        $("#Layer_1").fadeOut(150);
 
-        $('#main-container').fadeIn(600);
+        $('#main-container').fadeIn(1000);
     }, 3100);
 });
+
+$( document ).ready(function() {
+
+    var bar = new ProgressBar.Circle(projects_circle, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(1.0);
+});
+
+
+
+
+
+
 

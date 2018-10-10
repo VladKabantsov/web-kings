@@ -509,28 +509,44 @@ input::placeholder, textarea::placeholder {
     top: -20px;
 }
 
+.statistic {
 
+    margin-top: 15vh;
+}
+
+#projects_circle {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
 /*Styles for adaptive*/
 
 @media screen and (min-width:300px) and (max-width:1200px) {
 
     .main-text {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .img-2 {
         height: auto;
     }
 
-    /*.bg-2 {*/
-        /*height: auto;*/
-    /*}*/
+    #Layer_1 {
+        width: 70%;
+    }
+}
 
-    /*.services-subtitle {*/
-        /*font-size: 20px;*/
-    /*}*/
+@media screen and (min-width:300px) and (max-width:500px) {
 
-    /*.services-text {*/
-        /*font-size: 14px;*/
-    /*}*/
+    .main-text {
+        font-size: 20px;
+    }
+
+    .numbers {
+        font-size: 30px;
+    }
+
+    .about-categories {
+        font-size: 20px;
+    }
 }
