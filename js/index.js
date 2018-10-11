@@ -1,3 +1,36 @@
+var $window = $(window);
+var $elem = $("#projects_circle");
+
+var bar1 = new ProgressBar.Circle(projects_circle, {
+    strokeWidth: 6,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#eea649',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+});
+
+var bar2 = new ProgressBar.Circle(years_circle, {
+    strokeWidth: 6,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#eea649',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+});
+
+var bar3 = new ProgressBar.Circle(clients_circle, {
+    strokeWidth: 6,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#eea649',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+});
+
 $(window).on('load', function () {
     // Animate loader off screen
 
@@ -23,23 +56,25 @@ $(window).on('load', function () {
     }, 3100);
 });
 
-$( document ).ready(function() {
+function isScrolledIntoView($elem, $window) {
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
 
-    var bar = new ProgressBar.Circle(projects_circle, {
-        strokeWidth: 6,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: null
-    });
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
 
-    bar.animate(1.0);
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(document).on("scroll", function () {
+
+    if (isScrolledIntoView($elem, $window)) {
+
+        bar1.animate(1.0);
+        bar2.animate(1.0);
+        bar3.animate(1.0);
+    }
 });
-
-
-
 
 
 

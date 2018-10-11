@@ -219,7 +219,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     letter-spacing: 0.05em;
 }
@@ -229,7 +229,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     letter-spacing: 0.05em;
 }
@@ -403,8 +403,7 @@
 .text-area textarea {
     width: 100%;
     background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #FFF;
+    border: 1px solid #FFF;
 }
 
 .input-container input {
@@ -511,13 +510,29 @@ input::placeholder, textarea::placeholder {
 
 .statistic {
 
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
-#projects_circle {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
+/*#projects_circle {*/
+    /*margin: 20px;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*position: relative;*/
+/*}*/
+
+.auto-circle {
+    /*margin: 20px;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    width: 30%;
+    position: relative;
+}
+
+.circle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /*Styles for adaptive*/
 
@@ -534,6 +549,39 @@ input::placeholder, textarea::placeholder {
     #Layer_1 {
         width: 70%;
     }
+
+    .steps-text {
+        height: 12%;
+        font-size: 20px;
+    }
+
+    .container-for-steps div:nth-child(1):before {
+        padding-right: 10px;
+    }
+
+    .container-for-steps div:nth-child(2):after {
+        padding-left: 10px;
+    }
+
+    .container-for-steps div:nth-child(3):before {
+        padding-right: 10px;
+    }
+
+    .container-for-steps div:nth-child(4):after {
+        padding-left: 10px;
+    }
+
+    .container-for-steps div:nth-child(5):before {
+        padding-right: 10px;
+    }
+
+    .container-for-steps div:nth-child(6):after {
+        padding-left: 10px;
+    }
+
+    .services-subtitle {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width:300px) and (max-width:500px) {
@@ -543,10 +591,10 @@ input::placeholder, textarea::placeholder {
     }
 
     .numbers {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .about-categories {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
